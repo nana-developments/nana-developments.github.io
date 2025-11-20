@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel Premium - Landing Page</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">ArtikelKita</div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#promo">Artikel</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+
+        <div class="tombol-atas">
+          <a href="#promo" class="cta-btn-nav">Contact</a>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Tingkatkan Wawasan Anda Dengan Artikel Berkualitas</h1>
+        <p>
+          Temukan artikel terbaik yang informatif, inspiratif, dan mudah
+          dipahami.
+        </p>
+        <a href="#promo" class="cta-btn">Lihat Artikel</a>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLES -->
+    <section class="promo-section" id="promo">
+      <h2>Artikel Unggulan</h2>
+
+      <!-- SEARCH BAR -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari artikel..."
+        class="search-box"
+      />
+
+      <p id="notFound" class="not-found">Not Found</p>
+
+      <div class="cards" id="articleCards">
+        <div class="card" data-title="judul artikel 1">
+          <h3>Judul Artikel 1</h3>
+          <p>
+            Deskripsi singkat artikel pertama yang menarik perhatian pembaca.
+          </p>
+          <a href="#" class="read-btn">Baca Selengkapnya</a>
+        </div>
+
+        <div class="card" data-title="judul artikel 2">
+          <h3>Judul Artikel 2</h3>
+          <p>Artikel dengan topik terbaru untuk menambah wawasan Anda.</p>
+          <a href="#" class="read-btn">Baca Selengkapnya</a>
+        </div>
+
+        <div class="card" data-title="judul artikel 3">
+          <h3>Judul Artikel 3</h3>
+          <p>Pembahasan lengkap dan mendalam dengan gaya penulisan ringan.</p>
+          <a href="#" class="read-btn">Baca Selengkapnya</a>
+        </div>
+      </div>
+      <p id="notFound" class="not-found">Not Found</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section" data-aos="fade-up">
+      <div class="about-container">
+        <div class="about-image" data-aos="fade-right">
+          <img src="pic-1.jpg" alt="Foto Saya" />
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h2>Tentang Saya</h2>
+          <p>
+            Halo! Nama Saya Wahyu, Saya adalah seorang pembuat artikel yang
+            fokus pada topik teknologi, pemrograman, dan dunia digital. Saya
+            senang membagikan informasi berkualitas untuk membantu orang lain
+            belajar dan berkembang.
+          </p>
+          <p>
+            Dengan pengalaman menulis dan mengelola konten, saya ingin
+            memberikan artikel yang mudah dipahami namun tetap mendalam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact" data-aos="fade-up">
+      <div class="contact-container">
+        <h2>Hubungi Kami</h2>
+        <p>Anda dapat menghubungi kami melalui platform berikut:</p>
+
+        <div class="contact-list">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            class="contact-item"
+            data-aos="fade-right"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/whatsapp.svg"
+              alt="WhatsApp"
+            />
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/username_anda"
+            target="_blank"
+            class="contact-item"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg"
+              alt="Instagram"
+            />
+            <span>Instagram</span>
+          </a>
+
+          <!-- Gmail -->
+          <a
+            href="mailto:emailanda@gmail.com"
+            target="_blank"
+            class="contact-item"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg"
+              alt="Gmail"
+            />
+            <span>Gmail</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 ArtikelKita • Semua Hak Dilindungi</p>
+    </footer>
+
+    <script src="js.js"></script>
+  </body>
+</html>

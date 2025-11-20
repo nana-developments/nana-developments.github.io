@@ -1,0 +1,352 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  z-index: 999;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #007bff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #007bff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+}
+
+.cta-btn-nav {
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn-nav:hover {
+  background: #f1f1f1;
+}
+
+/* PROMO SECTION */
+.promo-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.promo-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.read-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* ANIMASI FADE */
+.fade {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Untuk kartu artikel juga ada animasi */
+.card {
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.card.hide {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+/* Not Found styling */
+.not-found {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #ff3b3b;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.not-found.show {
+  opacity: 1;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: 2px solid #007bff;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-box:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #f7f7f7;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* FOTO */
+.about-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.about-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-content h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.about-content p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-item {
+  width: 280px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 12px;
+  background: #f2f2f2;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item img {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-item:hover {
+  background: #e2e2e2;
+  transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    flex-direction: column;
+    background: #ffffffee;
+    width: 200px;
+    text-align: right;
+    padding: 20px;
+    transition: 0.4s;
+  }
+
+  .tombol-atas {
+    display: none;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
